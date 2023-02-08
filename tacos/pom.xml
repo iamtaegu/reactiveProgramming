@@ -12,7 +12,11 @@
 
 	<parent>
 		<groupId>sia</groupId>
+<<<<<<< HEAD
   	<artifactId>taco-cloud-parent</artifactId>
+=======
+  		<artifactId>taco-cloud-parent</artifactId>
+>>>>>>> 4987d6373a6339634f1aa3f87b8137da89767ac6
 		<version>0.0.6-SNAPSHOT</version>
 	</parent>
 

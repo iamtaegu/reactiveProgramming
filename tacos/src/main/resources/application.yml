@@ -11,7 +11,11 @@ taco:
   discount:
     codes:
       abcdef: 10
+<<<<<<< HEAD
 
+=======
+      
+>>>>>>> 4987d6373a6339634f1aa3f87b8137da89767ac6
 #logging:
 #  level:
 #    org.springframework.data.rest: debug
@@ -20,12 +24,16 @@ spring:
   data:
     rest:
       base-path: /api
+<<<<<<< HEAD
   jpa:
     hibernate.ddl-auto: create
+=======
+>>>>>>> 4987d6373a6339634f1aa3f87b8137da89767ac6
 
 ---
 spring:
   profiles: prod
+<<<<<<< HEAD
 
     #datasource:
     #url: jdbc:mysql://localhost/tacocloud
@@ -35,6 +43,17 @@ spring:
     url: jdbc:h2:~/jpashop
     username: sa
     password:
+=======
+  
+  #datasource:
+    #url: jdbc:mysql://localhost/tacocloud
+    #username: tacouser
+    #password: tacopassword
+  datasource:
+    url: jdbc:h2:~/tacocloud
+    username: tacouser
+    password: tacopassword
+>>>>>>> 4987d6373a6339634f1aa3f87b8137da89767ac6
   h2:
     console:
       enabled: true
@@ -42,5 +61,10 @@ spring:
 
 logging:
   level:
+<<<<<<< HEAD
     tacos: DEBUG
 
+=======
+    tacos: WARN
+    
+>>>>>>> 4987d6373a6339634f1aa3f87b8137da89767ac6

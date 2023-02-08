@@ -15,7 +15,11 @@
   "dependencies": {
     "@angular/animations": "^5.0.0",
     "@angular/common": "^5.0.0",
+<<<<<<< HEAD
     "@angular/compiler": "^5.0.0",
+=======
+    "@angular/compiler": "^5.2.11",
+>>>>>>> 4987d6373a6339634f1aa3f87b8137da89767ac6
     "@angular/core": "^5.0.0",
     "@angular/forms": "^5.0.0",
     "@angular/http": "^5.0.0",

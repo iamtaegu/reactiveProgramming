@@ -12,10 +12,27 @@
         <module name="tacocloud-api" />
         <module name="tacocloud-domain" />
         <module name="tacocloud-data" />
+<<<<<<< HEAD
         <module name="tacocloud-web" />
         <module name="taco-cloud" />
       </profile>
     </annotationProcessing>
+=======
+        <module name="taco-cloud" />
+        <module name="tacocloud-web" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="taco-cloud" target="1.8" />
+      <module name="taco-cloud-parent" target="1.8" />
+      <module name="tacocloud-api" target="1.8" />
+      <module name="tacocloud-data" target="1.8" />
+      <module name="tacocloud-domain" target="1.8" />
+      <module name="tacocloud-security" target="1.8" />
+      <module name="tacocloud-ui" target="1.8" />
+      <module name="tacocloud-web" target="1.8" />
+    </bytecodeTargetLevel>
+>>>>>>> 4987d6373a6339634f1aa3f87b8137da89767ac6
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">

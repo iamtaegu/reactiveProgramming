@@ -1,3 +1,5 @@
+git pull origin main --allow-unrelated-histories
+
 = Taco Cloud v0.0.6
 
 This folder contains the source code for the Taco Cloud sample from Spring in Action, 5th edition, as presented in Chapter 6.

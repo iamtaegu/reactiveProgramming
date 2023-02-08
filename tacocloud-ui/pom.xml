@@ -17,7 +17,11 @@
 	<description>Taco Cloud UI</description>
 
   <properties>
+<<<<<<< HEAD
       <node.version>v6.9.1</node.version>
+=======
+      <node.version>v18.10.0</node.version>
+>>>>>>> 4987d6373a6339634f1aa3f87b8137da89767ac6
       <yarn.version>v0.24.6</yarn.version>
       <frontend-maven-plugin.version>1.4</frontend-maven-plugin.version>
       <environment>dev</environment>

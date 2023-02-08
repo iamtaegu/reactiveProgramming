@@ -4,12 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="1fe73220-96c3-4b41-95be-9f2d0a5fa638" name="Changes" comment="" />
+=======
+    <list default="true" id="30dd5c83-a179-4c80-94f2-e3f2b558b740" name="Changes" comment="[2023-02-01] imac review commit">
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tacocloud-ui/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tacocloud-ui/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/tacocloud-ui/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tacocloud-ui/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tacocloud-ui/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tacos/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tacos/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tacos/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/tacos/src/main/resources/application.yml" afterDir="false" />
+    </list>
+>>>>>>> 4987d6373a6339634f1aa3f87b8137da89767ac6
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< HEAD
   <component name="JpbToolWindowState">
     <option name="myId2FirstActivated">
       <map>
@@ -21,10 +33,49 @@
         <entry key="com.haulmont.jpb.jpaStructure" value="true" />
       </map>
     </option>
+=======
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="demo" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="isToolWindowVisible" value="false" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+>>>>>>> 4987d6373a6339634f1aa3f87b8137da89767ac6
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
+<<<<<<< HEAD
         <option name="mavenHome" value="Use Maven wrapper" />
       </MavenGeneralSettings>
     </option>
@@ -42,6 +93,31 @@
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RunManager">
+=======
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2LMdb2jlMfnPUJXuGo7LMU5g2lG" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/Users/bccard9504/Desktop/reactiveProgramming",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.17",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "configurable.group.appearance"
+  }
+}]]></component>
+  <component name="RunManager" selected="Application.TacoCloudApplication">
+>>>>>>> 4987d6373a6339634f1aa3f87b8137da89767ac6
     <configuration name="TacoCloudApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="tacos.TacoCloudApplication" />
       <module name="taco-cloud" />
@@ -55,13 +131,42 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
     <configuration default="true" type="JetRunConfigurationType">
+=======
+    <configuration name="HomeControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="tacocloud-web" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tacos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tacos" />
+      <option name="MAIN_CLASS_NAME" value="tacos.HomeControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+>>>>>>> 4987d6373a6339634f1aa3f87b8137da89767ac6
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
     <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
       <option name="filePath" />
+=======
+    <configuration name="HomeControllerTest.testHomePage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="tacocloud-web" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tacos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tacos" />
+      <option name="MAIN_CLASS_NAME" value="tacos.HomeControllerTest" />
+      <option name="METHOD_NAME" value="testHomePage" />
+      <option name="TEST_OBJECT" value="method" />
+>>>>>>> 4987d6373a6339634f1aa3f87b8137da89767ac6
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -69,12 +174,18 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.TacoCloudApplication" />
+<<<<<<< HEAD
+=======
+        <item itemvalue="JUnit.HomeControllerTest" />
+        <item itemvalue="JUnit.HomeControllerTest.testHomePage" />
+>>>>>>> 4987d6373a6339634f1aa3f87b8137da89767ac6
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+<<<<<<< HEAD
       <changelist id="1fe73220-96c3-4b41-95be-9f2d0a5fa638" name="Changes" comment="" />
       <created>1675861191557</created>
       <option name="number" value="Default" />
@@ -83,4 +194,21 @@
     </task>
     <servers />
   </component>
+=======
+      <changelist id="30dd5c83-a179-4c80-94f2-e3f2b558b740" name="Changes" comment="" />
+      <created>1675684957857</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1675684957857</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+>>>>>>> 4987d6373a6339634f1aa3f87b8137da89767ac6
 </project>

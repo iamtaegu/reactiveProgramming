@@ -2,5 +2,9 @@
 <project version="4">
   <component name="JpaBuddyIdeaProjectConfig">
     <option name="defaultUnitInitialized" value="true" />
+<<<<<<< HEAD
+=======
+    <option name="renamerInitialized" value="true" />
+>>>>>>> 4987d6373a6339634f1aa3f87b8137da89767ac6
   </component>
 </project>
