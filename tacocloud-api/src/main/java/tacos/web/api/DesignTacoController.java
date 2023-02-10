@@ -19,8 +19,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
-import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
+import reactor.core.publisher.Flux;
 import tacos.Taco;
 import tacos.data.TacoRepository;
 
@@ -29,88 +29,34 @@ import tacos.data.TacoRepository;
                 produces="application/json")
 @CrossOrigin(origins="*")        // <2>
 public class DesignTacoController {
-  //private TacoRepository tacoRepo;
+
   private TacoRepository tacoRepo;
-  
+
   @Autowired
   EntityLinks entityLinks;
 
   public DesignTacoController(TacoRepository tacoRepo) {
     this.tacoRepo = tacoRepo;
   }
-/*
+
+
+  //start::다중반환
   @GetMapping("/recent")
   public Iterable<Taco> recentTacos() {                 //<3>
     PageRequest page = PageRequest.of(
             0, 12, Sort.by("createdAt").descending());
     return tacoRepo.findAll(page).getContent();
   }
-*/
+
   @GetMapping("/flux/recent")
   public Flux<Taco> flux_recentTacos() {
     return Flux.fromIterable(tacoRepo.findAll()).take(12);
+    //tacoRepo 반환 타입이 Flux인 경우
     //return tacoRepo.findAll().take(12);
   }
+  //end::다중반환
 
-  //end::recents[]
-
-//  @GetMapping("/recenth")
-//  public Resources<TacoResource> recentTacosH() {
-//    PageRequest page = PageRequest.of(
-//            0, 12, Sort.by("createdAt").descending());
-//    List<Taco> tacos = tacoRepo.findAll(page).getContent();
-//    
-//    List<TacoResource> tacoResources = 
-//        new TacoResourceAssembler().toResources(tacos);
-//    Resources<TacoResource> recentResources = 
-//        new Resources<TacoResource>(tacoResources);
-//    recentResources.add(
-//        linkTo(methodOn(DesignTacoController.class).recentTacos())
-//        .withRel("recents"));
-//    return recentResources;
-//  }
-
-  
-  
-//ControllerLinkBuilder.linkTo(DesignTacoController.class)
-//.slash("recent")
-//.withRel("recents"));
-
-  
-  
-  
-//  @GetMapping("/recenth")
-//  public Resources<TacoResource> recenthTacos() {
-//    PageRequest page = PageRequest.of(
-//            0, 12, Sort.by("createdAt").descending());
-//    List<Taco> tacos = tacoRepo.findAll(page).getContent();
-//
-//    List<TacoResource> tacoResources = new TacoResourceAssembler().toResources(tacos);
-//    
-//    Resources<TacoResource> tacosResources = new Resources<>(tacoResources);
-////    Link recentsLink = ControllerLinkBuilder
-////        .linkTo(DesignTacoController.class)
-////        .slash("recent")
-////        .withRel("recents");
-//
-//    Link recentsLink = 
-//        linkTo(methodOn(DesignTacoController.class).recentTacos())
-//        .withRel("recents");
-//    tacosResources.add(recentsLink);
-//    return tacosResources;
-//  }
-
-  //tag::postTaco[]
-  @PostMapping(consumes="application/json")
-  @ResponseStatus(HttpStatus.CREATED)
-  //public Mono<Taco> postTaco(@RequestBody Mono<Taco> tacoMono) {
-  public Taco postTaco(@RequestBody Taco taco) {
-    return tacoRepo.save(taco);
-    //return tacoRepo.saveAll(tacoMono).next();
-  }
-  //end::postTaco[]
-
-
+  //start::단일반환
   @GetMapping("/{id}")
   public Taco tacoById(@PathVariable("id") Long id) {
     Optional<Taco> optTaco = tacoRepo.findById(id);
@@ -120,22 +66,23 @@ public class DesignTacoController {
     return null;
   }
 
-  /* @GetMapping("/flux/{id}")
-  public Mono<Taco> tacoById(@PathVariable("id") Long id) {
-    return tacoRepo.findById(id);
-  } */
+  @GetMapping("/flux/{id}")
+  public Mono<Taco> flux_tacoById(@PathVariable("id") Long id) {
+    return Mono.justOrEmpty(tacoRepo.findById(id));
+  }
+  //end::단일반환
 
-//  @GetMapping("/{id}")
-//  public ResponseEntity<Taco> tacoById(@PathVariable("id") Long id) {
-//    Optional<Taco> optTaco = tacoRepo.findById(id);
-//    if (optTaco.isPresent()) {
-//      return new ResponseEntity<>(optTaco.get(), HttpStatus.OK);
-//    }
-//    return new ResponseEntity<>(null, HttpStatus.NOT_FOUND);
-//  }
 
-  
-//tag::recents[]
+  //tag::postTaco[]
+  @PostMapping(consumes = "application/json")
+  @ResponseStatus(HttpStatus.CREATED)
+  //1. @RequestBody 처리 Taco entity 생성 (블로킹)
+  //public Mono<Taco> postTaco(@RequestBody Mono<Taco> tacoMono) {
+  public Taco postTaco(@RequestBody Taco taco) {
+    //2. save 처리 (블로킹)
+    return tacoRepo.save(taco);
+    //return tacoRepo.saveAll(tacoMono).next();
+  }
+  //end::postTaco[]
+
 }
-//end::recents[]
-
